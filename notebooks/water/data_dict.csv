@@ -1,0 +1,125 @@
+column,zone,stage,stage_name,tag,instrument_type,full_name,signal_type,role,kind,units,min_normal,max_normal,mean_normal,short_name,description
+Row,"","","","","","",,Unknown,continuous,"",1.0,1048571.0,543225.8232,sys_unk,""
+1_AIT_001_PV,1,P1,Primary Grid,001,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.0,214.311,169.8232,primary_quality_sensor_1,Stealthy drain of elevated reservoir 2_LT_002
+1_AIT_002_PV,1,P1,Primary Grid,002,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.0,2.0593,0.6218,primary_quality_sensor_2,Contaminate via 1_AIT_002 + open 2_MV_003
+1_AIT_003_PV,1,P1,Primary Grid,003,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.0,12.0133,11.6998,primary_quality_sensor_3,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+1_AIT_004_PV,1,P1,Primary Grid,004,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.0,526.529,493.7611,primary_quality_sensor_4,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+1_AIT_005_PV,1,P1,Primary Grid,005,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.2083,0.4217,0.3098,primary_quality_sensor_5,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+1_FIT_001_PV,1,P1,Primary Grid,001,FIT,Flow Indication Transmitter,PV,Sensor,continuous,gal/min,0.0008,2.0662,0.5194,primary_flow_sensor,Turn off 1_FIT_001 → false reading → chemical dosing
+1_LS_001_AL,1,P1,Primary Grid,001,LS,Level Switch,AL,Sensor,discrete,"binary {0,1}",0.0,0.0,0.0,primary_level_sw_alarm_lo_1,High/low level alarm (discrete)
+1_LS_002_AL,1,P1,Primary Grid,002,LS,Level Switch,AL,Sensor,discrete,"binary {0,1}",0.0,0.0,0.0,primary_level_sw_alarm_lo_2,High/low level alarm (discrete)
+1_LT_001_PV,1,P1,Primary Grid,001,LT,Level Transmitter,PV,Sensor,continuous,%,38.8118,71.619,56.3723,primary_level_sensor,"Spoof 1_LT_001 → P1 overflow, P2A drains"
+1_MV_001_STATUS,1,P1,Primary Grid,001,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",0.0,2.0,1.2681,primary_valve_status_1,"Spoof 1_LT_001 → P1 overflow, P2A drains"
+1_MV_002_STATUS,1,P1,Primary Grid,002,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,primary_valve_status_2,Valve open/close status
+1_MV_003_STATUS,1,P1,Primary Grid,003,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,primary_valve_status_3,Valve open/close status
+1_MV_004_STATUS,1,P1,Primary Grid,004,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",0.0,2.0,1.2767,primary_valve_status_4,Valve open/close status
+1_P_001_STATUS,1,P1,Primary Grid,001,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,2.0,1.2714,primary_pump_status_1,Pump on/off status or speed
+1_P_002_STATUS,1,P1,Primary Grid,002,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,1.0,1.0,primary_pump_status_2,Pump on/off status or speed
+1_P_003_STATUS,1,P1,Primary Grid,003,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,2.0,1.2714,primary_pump_status_3,Pump on/off status or speed
+1_P_004_STATUS,1,P1,Primary Grid,004,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,1.0,1.0,primary_pump_status_4,Pump on/off status or speed
+1_P_005_STATUS,1,P1,Primary Grid,005,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,2.0,1.2259,primary_pump_status_5,Pump on/off status or speed
+1_P_006_STATUS,1,P1,Primary Grid,006,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,1.0,1.0,primary_pump_status_6,Pump on/off status or speed
+2_DPIT_001_PV,2,P2A,Elevated Reservoir,001,DPIT,Differential Pressure Transmitter,PV,Sensor,continuous,kPa,0.0,2777.41,2518.565,elevated_diff_press_sensor,Differential pressure
+2_FIC_101_CO,2,P2B,Consumer Tanks,101,FIC,Flow Indication Controller,CO,Actuator,continuous,% / gal/min,7.5304,100.0,64.0544,consumer_flow_ctrl_output_101,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_101_PV,2,P2B,Consumer Tanks,101,FIC,Flow Indication Controller,PV,Sensor,continuous,% / gal/min,0.0172,2.8953,0.1183,consumer_flow_ctrl_sensor_101,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_101_SP,2,P2B,Consumer Tanks,101,FIC,Flow Indication Controller,SP,Actuator,continuous,% / gal/min,0.09,0.51,0.2243,consumer_flow_ctrl_setpoint_101,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_201_CO,2,P2B,Consumer Tanks,201,FIC,Flow Indication Controller,CO,Actuator,continuous,% / gal/min,8.6122,100.0,64.5194,consumer_flow_ctrl_output_201,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_201_PV,2,P2B,Consumer Tanks,201,FIC,Flow Indication Controller,PV,Sensor,continuous,% / gal/min,0.0172,2.9438,0.11,consumer_flow_ctrl_sensor_201,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_201_SP,2,P2B,Consumer Tanks,201,FIC,Flow Indication Controller,SP,Actuator,continuous,% / gal/min,0.08,0.51,0.2085,consumer_flow_ctrl_setpoint_201,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_301_CO,2,P2B,Consumer Tanks,301,FIC,Flow Indication Controller,CO,Actuator,continuous,% / gal/min,5.327,100.0,67.3933,consumer_flow_ctrl_output_301,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_301_PV,2,P2B,Consumer Tanks,301,FIC,Flow Indication Controller,PV,Sensor,continuous,% / gal/min,0.0172,3.0476,0.1017,consumer_flow_ctrl_sensor_301,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_301_SP,2,P2B,Consumer Tanks,301,FIC,Flow Indication Controller,SP,Actuator,continuous,% / gal/min,0.09,0.52,0.211,consumer_flow_ctrl_setpoint_301,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_401_CO,2,P2B,Consumer Tanks,401,FIC,Flow Indication Controller,CO,Actuator,continuous,% / gal/min,2.5194,100.0,59.3291,consumer_flow_ctrl_output_401,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_401_PV,2,P2B,Consumer Tanks,401,FIC,Flow Indication Controller,PV,Sensor,continuous,% / gal/min,0.0172,3.0444,0.1196,consumer_flow_ctrl_sensor_401,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_401_SP,2,P2B,Consumer Tanks,401,FIC,Flow Indication Controller,SP,Actuator,continuous,% / gal/min,0.08,0.51,0.213,consumer_flow_ctrl_setpoint_401,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_501_CO,2,P2B,Consumer Tanks,501,FIC,Flow Indication Controller,CO,Actuator,continuous,% / gal/min,4.518,100.0,61.5779,consumer_flow_ctrl_output_501,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_501_PV,2,P2B,Consumer Tanks,501,FIC,Flow Indication Controller,PV,Sensor,continuous,% / gal/min,0.0172,2.5903,0.1106,consumer_flow_ctrl_sensor_501,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_501_SP,2,P2B,Consumer Tanks,501,FIC,Flow Indication Controller,SP,Actuator,continuous,% / gal/min,0.09,0.53,0.2136,consumer_flow_ctrl_setpoint_501,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_601_CO,2,P2B,Consumer Tanks,601,FIC,Flow Indication Controller,CO,Actuator,continuous,% / gal/min,4.8751,100.0,63.5711,consumer_flow_ctrl_output_601,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_601_PV,2,P2B,Consumer Tanks,601,FIC,Flow Indication Controller,PV,Sensor,continuous,% / gal/min,0.0172,2.4343,0.1011,consumer_flow_ctrl_sensor_601,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIC_601_SP,2,P2B,Consumer Tanks,601,FIC,Flow Indication Controller,SP,Actuator,continuous,% / gal/min,0.08,0.51,0.2112,consumer_flow_ctrl_setpoint_601,"Flow control loop (CO=output, PV=measured, SP=setpoint)"
+2_FIT_001_PV,2,P2A,Elevated Reservoir,001,FIT,Flow Indication Transmitter,PV,Sensor,continuous,gal/min,0.0,2.3019,0.5095,elevated_flow_sensor_1,Instantaneous flow rate
+2_FIT_002_PV,2,P2A,Elevated Reservoir,002,FIT,Flow Indication Transmitter,PV,Sensor,continuous,gal/min,0.0,1.1683,0.2829,elevated_flow_sensor_2,Instantaneous flow rate
+2_FIT_003_PV,2,P2A,Elevated Reservoir,003,FIT,Flow Indication Transmitter,PV,Sensor,continuous,gal/min,0.0,5.0883,0.2072,elevated_flow_sensor_3,Instantaneous flow rate
+2_FQ_101_PV,2,P2B,Consumer Tanks,101,FQ,Flow Totalizer,PV,Sensor,continuous,gal,0.0172,2.9356,0.1183,consumer_volume_sensor_101,Cumulative volume (monotonically increasing)
+2_FQ_201_PV,2,P2B,Consumer Tanks,201,FQ,Flow Totalizer,PV,Sensor,continuous,gal,0.0172,2.947,0.1099,consumer_volume_sensor_201,Cumulative volume (monotonically increasing)
+2_FQ_301_PV,2,P2B,Consumer Tanks,301,FQ,Flow Totalizer,PV,Sensor,continuous,gal,0.0172,2.9474,0.1017,consumer_volume_sensor_301,Cumulative volume (monotonically increasing)
+2_FQ_401_PV,2,P2B,Consumer Tanks,401,FQ,Flow Totalizer,PV,Sensor,continuous,gal,0.0172,3.0095,0.1196,consumer_volume_sensor_401,Cumulative volume (monotonically increasing)
+2_FQ_501_PV,2,P2B,Consumer Tanks,501,FQ,Flow Totalizer,PV,Sensor,continuous,gal,0.0172,2.5903,0.1106,consumer_volume_sensor_501,Cumulative volume (monotonically increasing)
+2_FQ_601_PV,2,P2B,Consumer Tanks,601,FQ,Flow Totalizer,PV,Sensor,continuous,gal,0.0172,2.6264,0.1011,consumer_volume_sensor_601,Cumulative volume (monotonically increasing)
+2_LS_101_AH,2,P2B,Consumer Tanks,101,LS,Level Switch,AH,Sensor,discrete,"binary {0,1}",0.0,1.0,0.0018,consumer_level_sw_alarm_hi_101,High/low level alarm (discrete)
+2_LS_101_AL,2,P2B,Consumer Tanks,101,LS,Level Switch,AL,Sensor,discrete,"binary {0,1}",0.0,1.0,0.0039,consumer_level_sw_alarm_lo_101,High/low level alarm (discrete)
+2_LS_201_AH,2,P2B,Consumer Tanks,201,LS,Level Switch,AH,Sensor,discrete,"binary {0,1}",0.0,1.0,0.0015,consumer_level_sw_alarm_hi_201,High/low level alarm (discrete)
+2_LS_201_AL,2,P2B,Consumer Tanks,201,LS,Level Switch,AL,Sensor,discrete,"binary {0,1}",0.0,1.0,0.003,consumer_level_sw_alarm_lo_201,High/low level alarm (discrete)
+2_LS_301_AH,2,P2B,Consumer Tanks,301,LS,Level Switch,AH,Sensor,discrete,"binary {0,1}",0.0,1.0,0.0041,consumer_level_sw_alarm_hi_301,High/low level alarm (discrete)
+2_LS_301_AL,2,P2B,Consumer Tanks,301,LS,Level Switch,AL,Sensor,discrete,"binary {0,1}",0.0,1.0,0.0028,consumer_level_sw_alarm_lo_301,High/low level alarm (discrete)
+2_LS_401_AH,2,P2B,Consumer Tanks,401,LS,Level Switch,AH,Sensor,discrete,"binary {0,1}",0.0,1.0,0.0018,consumer_level_sw_alarm_hi_401,High/low level alarm (discrete)
+2_LS_401_AL,2,P2B,Consumer Tanks,401,LS,Level Switch,AL,Sensor,discrete,"binary {0,1}",0.0,1.0,0.0036,consumer_level_sw_alarm_lo_401,High/low level alarm (discrete)
+2_LS_501_AH,2,P2B,Consumer Tanks,501,LS,Level Switch,AH,Sensor,discrete,"binary {0,1}",0.0,1.0,0.0025,consumer_level_sw_alarm_hi_501,High/low level alarm (discrete)
+2_LS_501_AL,2,P2B,Consumer Tanks,501,LS,Level Switch,AL,Sensor,discrete,"binary {0,1}",0.0,1.0,0.003,consumer_level_sw_alarm_lo_501,High/low level alarm (discrete)
+2_LS_601_AH,2,P2B,Consumer Tanks,601,LS,Level Switch,AH,Sensor,discrete,"binary {0,1}",0.0,1.0,0.0101,consumer_level_sw_alarm_hi_601,High/low level alarm (discrete)
+2_LS_601_AL,2,P2B,Consumer Tanks,601,LS,Level Switch,AL,Sensor,discrete,"binary {0,1}",0.0,1.0,0.003,consumer_level_sw_alarm_lo_601,High/low level alarm (discrete)
+2_LT_001_PV,2,P2A,Elevated Reservoir,001,LT,Level Transmitter,PV,Sensor,continuous,%,68.5104,71.553,69.7735,elevated_level_sensor_1,Tank water level
+2_LT_002_PV,2,P2A,Elevated Reservoir,002,LT,Level Transmitter,PV,Sensor,continuous,%,65.6986,82.9788,75.4087,elevated_level_sensor_2,Stealthy drain of elevated reservoir 2_LT_002
+2_MCV_007_CO,2,P2A,Elevated Reservoir,007,MCV,Modulating Valve,CO,Actuator,discrete,%,0.0,0.0,0.0,elevated_valve_output,Open 2_MCV_007 → leakage (unsuccessful)
+2_MCV_101_CO,2,P2B,Consumer Tanks,101,MCV,Modulating Valve,CO,Actuator,continuous,%,0.0,100.0,11.5713,consumer_valve_output_101,Maliciously open 2_MCV_101/201
+2_MCV_201_CO,2,P2B,Consumer Tanks,201,MCV,Modulating Valve,CO,Actuator,continuous,%,0.0,100.0,12.0224,consumer_valve_output_201,Maliciously open 2_MCV_101/201
+2_MCV_301_CO,2,P2B,Consumer Tanks,301,MCV,Modulating Valve,CO,Actuator,continuous,%,0.0,100.0,16.3816,consumer_valve_output_301,Close all consumer valves 2_MCV_101–601
+2_MCV_401_CO,2,P2B,Consumer Tanks,401,MCV,Modulating Valve,CO,Actuator,continuous,%,0.0,100.0,10.5631,consumer_valve_output_401,Close all consumer valves 2_MCV_101–601
+2_MCV_501_CO,2,P2B,Consumer Tanks,501,MCV,Modulating Valve,CO,Actuator,continuous,%,0.0,100.0,13.4003,consumer_valve_output_501,Close all consumer valves 2_MCV_101–601
+2_MCV_601_CO,2,P2B,Consumer Tanks,601,MCV,Modulating Valve,CO,Actuator,continuous,%,0.0,100.0,17.4754,consumer_valve_output_601,Close all consumer valves 2_MCV_101–601
+2_MV_001_STATUS,2,P2A,Elevated Reservoir,001,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,elevated_valve_status_1,Valve open/close status
+2_MV_002_STATUS,2,P2A,Elevated Reservoir,002,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,elevated_valve_status_2,Valve open/close status
+2_MV_003_STATUS,2,P2A,Elevated Reservoir,003,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",0.0,2.0,1.2162,elevated_valve_status_3,Contaminate via 1_AIT_002 + open 2_MV_003
+2_MV_004_STATUS,2,P2A,Elevated Reservoir,004,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",2.0,2.0,2.0,elevated_valve_status_4,Valve open/close status
+2_MV_005_STATUS,2,P2A,Elevated Reservoir,005,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",2.0,2.0,2.0,elevated_valve_status_5,Valve open/close status
+2_MV_006_STATUS,2,P2A,Elevated Reservoir,006,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",0.0,2.0,1.1475,elevated_valve_status_6,Valve open/close status
+2_MV_009_STATUS,2,P2A,Elevated Reservoir,009,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",2.0,2.0,2.0,elevated_valve_status_9,Valve open/close status
+2_MV_101_STATUS,2,P2B,Consumer Tanks,101,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",0.0,2.0,1.4719,consumer_valve_status_101_1,Valve open/close status
+2_MV_201_STATUS,2,P2B,Consumer Tanks,201,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",0.0,2.0,1.5163,consumer_valve_status_201_1,Valve open/close status
+2_MV_301_STATUS,2,P2B,Consumer Tanks,301,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",0.0,2.0,1.5731,consumer_valve_status_301_1,Valve open/close status
+2_MV_401_STATUS,2,P2B,Consumer Tanks,401,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",0.0,2.0,1.4375,consumer_valve_status_401_1,Valve open/close status
+2_MV_501_STATUS,2,P2B,Consumer Tanks,501,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",0.0,2.0,1.5028,consumer_valve_status_501_1,Valve open/close status
+2_MV_601_STATUS,2,P2B,Consumer Tanks,601,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",0.0,2.0,1.5245,consumer_valve_status_601_1,Valve open/close status
+2_P_003_SPEED,2,P2A,Elevated Reservoir,003,P,Pump,SPEED,Actuator,continuous,binary or RPM,-0.0951,41.685,3.4124,elevated_pump_speed_3,Pump on/off status or speed
+2_P_003_STATUS,2,P2A,Elevated Reservoir,003,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,2.0,1.1573,elevated_pump_status_3,Pump on/off status or speed
+2_P_004_SPEED,2,P2A,Elevated Reservoir,004,P,Pump,SPEED,Actuator,continuous,binary or RPM,-0.0551,0.041,0.0274,elevated_pump_speed_4,Pump on/off status or speed
+2_P_004_STATUS,2,P2A,Elevated Reservoir,004,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,1.0,1.0,elevated_pump_status_4,Pump on/off status or speed
+2_PIC_003_CO,2,P2A,Elevated Reservoir,003,PIC,Pressure Indication Controller,CO,Actuator,continuous,% / kPa,0.0,50.0,45.8075,elevated_press_ctrl_output,Pressure control loop
+2_PIC_003_PV,2,P2A,Elevated Reservoir,003,PIC,Pressure Indication Controller,PV,Sensor,continuous,% / kPa,0.0112,3.7671,0.2166,elevated_press_ctrl_sensor,Pressure control loop
+2_PIC_003_SP,2,P2A,Elevated Reservoir,003,PIC,Pressure Indication Controller,SP,Actuator,discrete,% / kPa,1.0,1.0,1.0,elevated_press_ctrl_setpoint,Pressure control loop
+2_PIT_001_PV,2,P2A,Elevated Reservoir,001,PIT,Pressure Indication Transmitter,PV,Sensor,continuous,kPa,132.647,163.33,152.6235,elevated_pressure_sensor_1,Process pressure
+2_PIT_002_PV,2,P2A,Elevated Reservoir,002,PIT,Pressure Indication Transmitter,PV,Sensor,continuous,kPa,0.0,99.8292,89.5559,elevated_pressure_sensor_2,Process pressure
+2_PIT_003_PV,2,P2A,Elevated Reservoir,003,PIT,Pressure Indication Transmitter,PV,Sensor,continuous,kPa,0.0111,3.8215,0.2165,elevated_pressure_sensor_3,Process pressure
+2_SV_101_STATUS,2,P2B,Consumer Tanks,101,SV,Solenoid Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,consumer_valve_status_101_2,On/off status
+2_SV_201_STATUS,2,P2B,Consumer Tanks,201,SV,Solenoid Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,consumer_valve_status_201_2,On/off status
+2_SV_301_STATUS,2,P2B,Consumer Tanks,301,SV,Solenoid Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,consumer_valve_status_301_2,On/off status
+2_SV_401_STATUS,2,P2B,Consumer Tanks,401,SV,Solenoid Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,consumer_valve_status_401_2,On/off status
+2_SV_501_STATUS,2,P2B,Consumer Tanks,501,SV,Solenoid Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,consumer_valve_status_501_2,On/off status
+2_SV_601_STATUS,2,P2B,Consumer Tanks,601,SV,Solenoid Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,consumer_valve_status_601_2,On/off status
+2A_AIT_001_PV,2A,P2B,Consumer Tanks,001,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.1436,0.3223,0.1733,consumer_quality_sensor_1_1,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+2A_AIT_002_PV,2A,P2B,Consumer Tanks,002,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.0,7.9004,0.0016,consumer_quality_sensor_2_1,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+2A_AIT_003_PV,2A,P2B,Consumer Tanks,003,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,8.1875,8.7959,8.5616,consumer_quality_sensor_3_1,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+2A_AIT_004_PV,2A,P2B,Consumer Tanks,004,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,470.001,501.998,486.7433,consumer_quality_sensor_4_1,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+2B_AIT_001_PV,2B,P2B,Consumer Tanks,001,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.1621,0.2324,0.1902,consumer_quality_sensor_1_2,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+2B_AIT_002_PV,2B,P2B,Consumer Tanks,002,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,8.5196,38.7829,9.0943,consumer_quality_sensor_2_2,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+2B_AIT_003_PV,2B,P2B,Consumer Tanks,003,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,6.7328,8.8045,8.5247,consumer_quality_sensor_3_2,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+2B_AIT_004_PV,2B,P2B,Consumer Tanks,004,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,436.574,571.275,491.05,consumer_quality_sensor_4_2,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+3_AIT_001_PV,3,P3,Return Water,001,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.0,0.1647,0.0043,return_quality_sensor_1,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+3_AIT_002_PV,3,P3,Return Water,002,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.0,8293.78,7056.6602,return_quality_sensor_2,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+3_AIT_003_PV,3,P3,Return Water,003,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.0,46.7402,8.3316,return_quality_sensor_3,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+3_AIT_004_PV,3,P3,Return Water,004,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,-1770.9,2780.93,644.176,return_quality_sensor_4,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+3_AIT_005_PV,3,P3,Return Water,005,AIT,Analyzer Indication Transmitter,PV,Sensor,continuous,μS/cm or mg/L,0.0721,1.1621,0.6734,return_quality_sensor_5,Water quality (conductivity/pH/turbidity/ORP/chlorine)
+3_FIT_001_PV,3,P3,Return Water,001,FIT,Flow Indication Transmitter,PV,Sensor,continuous,gal/min,0.0008,1.1405,0.5167,return_flow_sensor,Instantaneous flow rate
+3_LS_001_AL,3,P3,Return Water,001,LS,Level Switch,AL,Sensor,discrete,"binary {0,1}",1.0,1.0,1.0,return_level_sw_alarm_lo,High/low level alarm (discrete)
+3_LT_001_PV,3,P3,Return Water,001,LT,Level Transmitter,PV,Sensor,continuous,%,63.959,69.1678,65.168,return_level_sensor,Tank water level
+3_MV_001_STATUS,3,P3,Return Water,001,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,return_valve_status_1,Valve open/close status
+3_MV_002_STATUS,3,P3,Return Water,002,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,return_valve_status_2,Valve open/close status
+3_MV_003_STATUS,3,P3,Return Water,003,MV,Motorized Valve,STATUS,Actuator,discrete,"binary {0,1}",1.0,1.0,1.0,return_valve_status_3,Valve open/close status
+3_P_001_STATUS,3,P3,Return Water,001,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,1.0,1.0,return_pump_status_1,Pump on/off status or speed
+3_P_002_STATUS,3,P3,Return Water,002,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,1.0,1.0,return_pump_status_2,Pump on/off status or speed
+3_P_003_STATUS,3,P3,Return Water,003,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,1.0,1.0,return_pump_status_3,Pump on/off status or speed
+3_P_004_STATUS,3,P3,Return Water,004,P,Pump,STATUS,Actuator,discrete,binary or RPM,1.0,1.0,1.0,return_pump_status_4,Pump on/off status or speed
+LEAK_DIFF_PRESSURE,"","","","","","",,Unknown,continuous,"",45.3965,147.295,63.0634,leak_diff_pressure,""
+PLANT_START_STOP_LOG,"","","","","","",,Unknown,discrete,"",1.0,1.0,1.0,plant_run_status,""
+TOTAL_CONS_REQUIRED_FLOW,"","","","","","",,Unknown,continuous,"",0.0,2.26,0.5426,required_flow,""
